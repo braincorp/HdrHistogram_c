@@ -72,10 +72,6 @@ configure_file(
     ${PROJECT_NAME}-config.cmake
     @ONLY)
 install(
-    EXPORT ${PROJECT_NAME}-targets
-    DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/${PROJECT_NAME}
-    NAMESPACE ${PROJECT_NAME}::)
-install(
     FILES
         ${PROJECT_BINARY_DIR}/${PROJECT_NAME}-config.cmake
         ${PROJECT_BINARY_DIR}/${PROJECT_NAME}-config-version.cmake
